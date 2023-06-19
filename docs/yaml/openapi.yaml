@@ -1,0 +1,72 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: A Typescript API
+  description: A simple Typescript API
+  contact: 
+    name: Dexter Chan
+    email: 227105932@stu.vtc.edu.hk
+  license:
+    name: Apache 2.0
+    url: 'https://www.apache.org/licenses/LICENSE-2.0.html'
+servers:
+  - url: 'https://typescriptapi--DexterTTT.repl.co'
+    description: Development server
+tags:
+  - name: Users
+    description: API endpoints for user management.
+  - name: Cats
+    description: Access and perform CRUD operations on blog entries.
+paths:
+  /Cats/{id}:
+    parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+        description: Numeric id of the Cats
+    get:
+      tags:
+        - Cats
+      description:
+        Get Cats by id.
+      responses:
+        '200':
+          description: View of Cats 
+        '404':
+          description: Cats was not found in the DB.
+    post:
+      tags:
+        - Cats
+      description:
+        Create a new Cat.
+      requestBody:
+        description: All new Cat data.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: ./article.json#/definitions/article
+      responses:
+        '201':
+          description: User created
+
+    put:
+      tags:
+        - Cats
+      description: Update Cats by ID.
+      responses:
+        '200':
+          description: Update confirmation and link to record.
+        '404':
+          description: Cats was not found in the DB.
+    delete:
+      tags:
+        - Cats
+      description: Delete Cats by ID.
+    responses:
+        '200':
+          description: Delete confirmation.
+        '404':
+          description: Cats was not found in the DB.

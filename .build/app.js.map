@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../app.ts"],
+  "sourcesContent": ["import Koa from 'koa'\nimport serve from 'koa-static'\nimport cors from 'koa-cors'\n\nimport { router as users } from './routes/users'\nimport { router as cats } from './routes/cats'\n\nconst app = new Koa()\n\napp.use(cors())\napp.use(users.routes())\napp.use(cats.routes())\napp.use(serve('./docs'))\n\nexport default app"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,iBAAgB;AAChB,wBAAkB;AAClB,sBAAiB;AAEjB,mBAAgC;AAChC,kBAA+B;AAE/B,MAAM,MAAM,IAAI,WAAAA,QAAI;AAEpB,IAAI,QAAI,gBAAAC,SAAK,CAAC;AACd,IAAI,IAAI,aAAAC,OAAM,OAAO,CAAC;AACtB,IAAI,IAAI,YAAAC,OAAK,OAAO,CAAC;AACrB,IAAI,QAAI,kBAAAC,SAAM,QAAQ,CAAC;AAEvB,IAAO,cAAQ;",
+  "names": ["Koa", "cors", "users", "cats", "serve"]
+}

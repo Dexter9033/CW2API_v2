@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../private/config.ts"],
+  "sourcesContent": ["const config = {\n  user: 'oezzwsdf',\n  password: 'tQKtcIXXZ-AawrutAhP5Yef4whbeSscr',\n  host: 'john.db.elephantsql.com',\n  port: 5432,\n  database: 'oezzwsdf'\n}\n\n\n//export above config for database helpers use\nexport { config }"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,MAAM,SAAS;AAAA,EACb,MAAM;AAAA,EACN,UAAU;AAAA,EACV,MAAM;AAAA,EACN,MAAM;AAAA,EACN,UAAU;AACZ;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../index.ts"],
+  "sourcesContent": ["import app from './app'\n\nconst port = process.env.PORT || 10888\napp.listen(port);\nconsole.log(`API server running on port ${port}`)"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;AAAA,iBAAgB;AAEhB,MAAM,OAAO,QAAQ,IAAI,QAAQ;AACjC,WAAAA,QAAI,OAAO,IAAI;AACf,QAAQ,IAAI,8BAA8B,MAAM;",
+  "names": ["app"]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../controllers/auth.ts"],
+  "sourcesContent": ["import passport from 'koa-passport'\nimport basicAuth from '../strategies/basic'\n\npassport.use(basicAuth)\n\nexport default passport.authenticate(['basic'],{session:false})"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,0BAAqB;AACrB,mBAAsB;AAEtB,oBAAAA,QAAS,IAAI,aAAAC,OAAS;AAEtB,IAAO,eAAQ,oBAAAD,QAAS,aAAa,CAAC,OAAO,GAAE,EAAC,SAAQ,MAAK,CAAC;",
+  "names": ["passport", "basicAuth"]
+}
